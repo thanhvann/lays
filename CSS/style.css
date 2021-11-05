@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mark Pro", sans-serif;
+}
+
+header {
+  background-color: #fbd703;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.language {
+  text-align: right;
+  transform: translateY(-25px);
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 20px; */
+}
+
+.language span {
+  background-color: #fcc90b;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 1px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+
+.language span:first-child {
+  border-bottom-right-radius: 0;
+}
+
+.language span:last-child {
+  border-bottom-left-radius: 0;
+}
+
+.link a {
+  font-weight: 700;
+  color: #231f20;
+  font-size: 20px;
+  border-radius: 30 px;
+  padding: 10 px 0;
+  display: inline-block;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.link > * {
+  margin: 0 20px;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  background-color: pink;
+  top: 130%;
+  left: 0;
+  width: 250px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(15px);
+}
+.dropdown-menu:hover .item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.link {
+  display: flex;
+}
+
+.link i {
+  color: #c5a90a;
+  font-size: 14px;
+  transform: rotate(0deg);
+  transition: all 0.4s;
+  margin-left: 5px;
+}
+
+.dropdown-menu:hover i {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu:hover a {
+  text-decoration: underline;
+}
+
+.item p {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.item p:first-child {
+  background-color: #fcb715;
+  border-bottom: 1.5px solid #fff;
+}
+
+.item p:nth-child(2) {
+  background-color: #e11f2b;
+}
+
+.item p:nth-child(3) {
+  background-color: #fcb715;
+}
+
+.item p:nth-child(4) {
+  background-color: #e11f2b;
+}
+.link a:last-child {
+  margin-right: 0;
+}
+
+.link {
+  display: flex;
+}
+
+/* @media only screen and (max-width: 800px) {
+  header {
+    background-color: aqua;
+  }
+} */
